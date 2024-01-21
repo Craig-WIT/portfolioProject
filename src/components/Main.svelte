@@ -1,5 +1,12 @@
 <script>
+    import Step from "./Step.svelte";
 
+    let steps = [
+        {name: 'Store',icon:'fa-solid fa-cart-shopping'},
+        {name: 'Todos',icon:'fa-solid fa-list-check'},
+        {name: 'Pokemon',icon:'fa-solid fa-diagram-project'},
+    ]
+        
 </script>
 
 <main class="flex flex-col flex-1 p-4">
@@ -12,13 +19,39 @@
                 My <span class="poppins text-violet-400">favourite tech</span> includes SvelteKit, TailwindCSS, Node.js + Express.js & PostgreSQL
             </p>
             <a href="https://www.linkedin.com/in/craig-grehan-fcca-885722a7/?originalSubdomain=ie" target="_blank" class="blueShadow mx-auto lg:mr-auto text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950">
-                <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"/>
+                <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-30 group-hover:translate-x-full z-0 duration-200"/>
 
                 <h4 class="relative z-9">Get in touch &rarr;</h4>
             </a>
         </div>
         <div class="relative shadow-2xl grid place-items-center">
             <img src={"images/profile.png"} alt="Profile" class="object-cover z-[2] max-h-[70vh]">
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
+        <div class="flex flex-col gap-2 text-center">
+            <h6 class="text-lg sm:text-xl md:text-2xl">
+                A few of my creative endeavours
+            </h6>
+            <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
+                Curious to <span class="poppins text-violet-400">see</span> my work?
+            </h3>
+        </div>
+        <a href="https://www.youtube.com/?app" target="_blank" class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200">
+            <i class="fa-regular fa-circle-play"></i>
+            <p>Watch the Video</p>
+        </a>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
+            <Step step={steps[0]}>
+
+            </Step>
+            <Step step={steps[1]}>
+
+            </Step>
+            <Step step={steps[2]}>
+
+            </Step>
         </div>
     </section>
 </main>
