@@ -12,7 +12,7 @@
             </a>
         </p>
         <p><b class="pr-2">LinkedIn</b> 
-            <a class="text-violet-400" target="_blank" href="#">
+            <a class="text-violet-400" target="_blank" href="https://www.linkedin.com/in/craig-grehan-fcca-885722a7/?originalSubdomain=ie">
                 Craig Grehan, FCCA<sup><span class="text-xs scale-75 pl-0.5">
                     <i class="fa-solid fa-arrow-up-right-from-square text-xs scale-[75%]"></i>
                 </span></sup>
